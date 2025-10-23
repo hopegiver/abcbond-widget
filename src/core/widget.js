@@ -76,6 +76,13 @@ export class Widget {
       await this.preloadPage(path, params);
     });
 
+    // 초기 로드 시 인증 확인
+    const currentHash = window.location.hash.slice(1) || '/';
+    if (!this.state.isAuthenticated() && currentHash !== '/login') {
+      // 인증되지 않았고 로그인 페이지가 아니면 로그인으로 리다이렉트
+      window.location.hash = '#/login';
+    }
+
     // 라우터 초기화 (현재 URL에 맞는 뷰 렌더링)
     this.router.init();
   }
