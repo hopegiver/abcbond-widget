@@ -1,0 +1,79 @@
+{
+  "id": 1,
+  "name": "래미안 강남 더 센트럴",
+  "location": "서울 강남구",
+  "address": "서울특별시 강남구 역삼동 123-45",
+  "investedAmount": 50000000,
+  "expectedReturnRate": 8.5,
+  "monthlyInterest": 354166,
+  "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&h=600&fit=crop",
+  "images": [
+    "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&h=600&fit=crop"
+  ],
+  "description": "강남 핵심 입지의 프리미엄 아파트 투자 상품입니다. 안정적인 수익률과 우수한 담보가치를 자랑합니다.",
+  "propertyValue": 1200000000,
+  "kbValue": 1180000000,
+  "seniorLoan": 600000000,
+  "ltv": 50,
+  "registrationDocument": "https://example.com/documents/registration.pdf",
+  "details": {
+    "전용면적": "84.5㎡",
+    "공급면적": "114.2㎡",
+    "준공년도": "2020년",
+    "층수": "15층 / 25층",
+    "방향": "남향",
+    "주차": "세대당 1.5대"
+  },
+  "investmentInfo": {
+    "투자시작일": "2024-01-15",
+    "투자기간": "24개월",
+    "이자지급일": "매월 15일",
+    "원금상환일": "2026-01-15",
+    "담보순위": "2순위"
+  },
+  "loanStructure": [
+    {
+      "priority": "선순위 대출",
+      "amount": 600000000,
+      "percentage": 50
+    },
+    {
+      "priority": "후순위 대출",
+      "amount": 300000000,
+      "percentage": 25
+    },
+    {
+      "priority": "나의 투자",
+      "amount": 50000000,
+      "percentage": 4.2
+    }
+  ],
+  "monthlyPayments": [
+    {
+      "month": "2024-12",
+      "amount": 354166,
+      "paid": true,
+      "date": "2024-12-15"
+    },
+    {
+      "month": "2024-11",
+      "amount": 354166,
+      "paid": true,
+      "date": "2024-11-15"
+    },
+    {
+      "month": "2024-10",
+      "amount": 354166,
+      "paid": true,
+      "date": "2024-10-15"
+    },
+    {
+      "month": "2024-09",
+      "amount": 354166,
+      "paid": true,
+      "date": "2024-09-15"
+    }
+  ]
+}

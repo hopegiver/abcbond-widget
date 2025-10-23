@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "래미안 강남 더 센트럴",
+    "investedAmount": 50000000,
+    "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&h=300&fit=crop",
+    "location": "서울 강남구",
+    "totalValue": 1200000000,
+    "expectedReturnRate": 8.5
+  },
+  {
+    "id": 2,
+    "name": "힐스테이트 광교",
+    "investedAmount": 30000000,
+    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400&h=300&fit=crop",
+    "location": "경기 수원시",
+    "totalValue": 850000000,
+    "expectedReturnRate": 7.2
+  },
+  {
+    "id": 3,
+    "name": "롯데캐슬 송도",
+    "investedAmount": 25000000,
+    "image": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=400&h=300&fit=crop",
+    "location": "인천 연수구",
+    "totalValue": 780000000,
+    "expectedReturnRate": 6.8
+  },
+  {
+    "id": 4,
+    "name": "자이 더 센트럴 판교",
+    "investedAmount": 40000000,
+    "image": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=400&h=300&fit=crop",
+    "location": "경기 성남시",
+    "totalValue": 950000000,
+    "expectedReturnRate": 7.8
+  },
+  {
+    "id": 5,
+    "name": "아크로 리버뷰 한남",
+    "investedAmount": 80000000,
+    "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&h=300&fit=crop",
+    "location": "서울 용산구",
+    "totalValue": 2100000000,
+    "expectedReturnRate": 9.2
+  },
+  {
+    "id": 6,
+    "name": "푸르지오 하이엔드",
+    "investedAmount": 35000000,
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=300&fit=crop",
+    "location": "서울 마포구",
+    "totalValue": 920000000,
+    "expectedReturnRate": 7.5
+  }
+]
