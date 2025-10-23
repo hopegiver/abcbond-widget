@@ -11,7 +11,9 @@
       "Bash(python -m http.server:*)",
       "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: ABC Bond 투자 포트폴리오 위젯\n\n- 로그인 기능 (user1/password1)\n- 투자 아파트 목록 페이지\n- 투자 아파트 상세 페이지 (LTV 시각화, 이자 지급 내역)\n- 사용자 인증 및 세션 관리\n- 반응형 UI 디자인\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
       "Bash(git config:*)",
-      "Bash(git remote:*)"
+      "Bash(git remote:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm install:*)"
     ],
     "deny": [],
     "ask": []

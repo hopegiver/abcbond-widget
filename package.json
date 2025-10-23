@@ -1,14 +1,14 @@
 {
-  "name": "pages-template",
+  "name": "abcbond-widget",
   "version": "1.0.0",
-  "description": "Cloudflare Pages template project",
+  "description": "ABC Bond investment portfolio widget",
   "type": "module",
   "scripts": {
     "build": "node build.js",
     "dev": "node build.js --watch"
   },
-  "keywords": ["cloudflare", "pages", "template"],
-  "author": "",
+  "keywords": ["investment", "portfolio", "widget", "abcbond"],
+  "author": "hopegiver",
   "license": "ISC",
   "devDependencies": {
     "esbuild": "^0.20.0"
