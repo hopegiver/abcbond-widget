@@ -43,6 +43,14 @@ export async function fetchAPI(endpoint, options = {}) {
     });
 
     if (!response.ok) {
+      // 401 Unauthorized - 로그인 페이지로 리다이렉트
+      if (response.status === 401) {
+        // Clear user state
+        localStorage.removeItem('widget-state');
+        // Redirect to login page
+        window.location.hash = '#/login';
+        throw new Error('Unauthorized - redirecting to login');
+      }
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
