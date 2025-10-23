@@ -94,12 +94,28 @@ export async function login(username, password) {
  * Get invested apartments
  */
 export async function getInvestments() {
-  return fetchAPI('/investments');
+  const response = await fetchAPI('/investments');
+  // API 응답이 객체 형태일 경우 배열로 변환
+  if (response && Array.isArray(response.investments)) {
+    return response.investments;
+  }
+  // 이미 배열인 경우 그대로 반환
+  if (Array.isArray(response)) {
+    return response;
+  }
+  // 데이터가 없거나 잘못된 형식인 경우 빈 배열 반환
+  console.warn('Invalid investments response format:', response);
+  return [];
 }
 
 /**
  * Get investment detail
  */
 export async function getInvestmentDetail(investmentId) {
-  return fetchAPI(`/investments/${investmentId}`);
+  const response = await fetchAPI(`/investments/${investmentId}`);
+  // API 응답이 객체로 래핑되어 있는 경우 처리
+  if (response && response.investment) {
+    return response.investment;
+  }
+  return response;
 }
