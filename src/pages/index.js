@@ -86,12 +86,15 @@ export class IndexPage {
   renderInvestmentCard(investment) {
     const card = createElement('div', { className: 'investment-card' });
 
+    const investedAmount = investment.investedAmount || 0;
+    const expectedReturnRate = investment.expectedReturnRate || 0;
+
     card.innerHTML = `
-      <img src="${investment.image}" alt="${investment.name}">
-      <h3 class="investment-title">${investment.name}</h3>
-      <p class="investment-location">${investment.location}</p>
-      <p class="investment-amount">투자금액: ${investment.investedAmount.toLocaleString()}원</p>
-      <p class="investment-return-rate">예상 수익률: ${investment.expectedReturnRate}%</p>
+      <img src="${investment.image || ''}" alt="${investment.name || ''}">
+      <h3 class="investment-title">${investment.name || ''}</h3>
+      <p class="investment-location">${investment.location || ''}</p>
+      <p class="investment-amount">투자금액: ${investedAmount.toLocaleString()}원</p>
+      <p class="investment-return-rate">예상 수익률: ${expectedReturnRate}%</p>
     `;
 
     card.addEventListener('click', () => {
