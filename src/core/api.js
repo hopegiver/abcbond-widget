@@ -95,7 +95,11 @@ export async function login(username, password) {
  */
 export async function getInvestments() {
   const response = await fetchAPI('/investments');
-  // API 응답이 객체 형태일 경우 배열로 변환
+  // API 응답이 { data: [...] } 형태인 경우
+  if (response && Array.isArray(response.data)) {
+    return response.data;
+  }
+  // API 응답이 { investments: [...] } 형태인 경우
   if (response && Array.isArray(response.investments)) {
     return response.investments;
   }
@@ -113,7 +117,11 @@ export async function getInvestments() {
  */
 export async function getInvestmentDetail(investmentId) {
   const response = await fetchAPI(`/investments/${investmentId}`);
-  // API 응답이 객체로 래핑되어 있는 경우 처리
+  // API 응답이 { data: {...} } 형태인 경우
+  if (response && response.data) {
+    return response.data;
+  }
+  // API 응답이 { investment: {...} } 형태인 경우
   if (response && response.investment) {
     return response.investment;
   }
